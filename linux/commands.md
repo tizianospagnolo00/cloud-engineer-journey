@@ -1,5 +1,6 @@
 # Linux Commands Notes
 
+
 ## Navigation
 
 pwd:
@@ -24,3 +25,21 @@ Moves or renames files
 
 cat:
 Display file contents.
+
+
+## File Reading
+
+cat:
+Displays the entire contents of a file.
+
+less:
+Displays a file one page at a time.
+Useful for reading large files and searching within them.
+
+head:
+Displays the first 10 lines of a file by default.
+
+tail:
+Displays the last 10 lines of a file by default.
+Useful for checking recent log entries.
+
