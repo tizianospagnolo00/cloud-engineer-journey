@@ -43,3 +43,43 @@ tail:
 Displays the last 10 lines of a file by default.
 Useful for checking recent log entries.
 
+
+## Searching and Filtering
+
+grep:
+Searches for a string or pattern inside text.
+
+-i:
+Ignores differences between uppercase and lowercase letters.
+
+-n:
+Shows the line number of each matching line.
+
+Example:
+grep -in "error" test.log
+
+
+## Counting
+
+wc:
+Counts lines, words and bytes.
+
+-l:
+Counts lines.
+
+-w:
+Counts words.
+
+Example:
+wc -l test.log
+
+
+## Pipes
+
+|:
+Passes the output of one command to another command.
+
+Example:
+grep -i "error" test.log | wc -l
+
+This searches for lines containing "error" and counts them.
