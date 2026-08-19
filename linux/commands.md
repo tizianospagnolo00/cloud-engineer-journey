@@ -83,3 +83,28 @@ Example:
 grep -i "error" test.log | wc -l
 
 This searches for lines containing "error" and counts them.
+
+
+## Redirection
+
+>:
+Redirects command output to a file.
+Creates the file if it does not exist.
+Overwrites the file if it already exists.
+
+>>:
+Redirects command output to a file.
+Creates the file if it does not exist.
+Appends to the file if it already exists.
+
+Example:
+grep -i "error" test.log > errors.log
+
+
+## File Removal
+
+rm:
+Removes files.
+
+Example:
+rm test.log
