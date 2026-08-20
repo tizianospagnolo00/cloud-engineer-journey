@@ -108,3 +108,55 @@ Removes files.
 
 Example:
 rm test.log
+
+
+## Finding Files and Directories
+
+find:
+Searches for files and directories based on conditions such as name, type, or depth.
+
+-type f:
+Searches only for files.
+
+-type d:
+Searches only for directories.
+
+-name:
+Searches by name or pattern.
+
+-maxdepth:
+Limits how deep find searches inside directories.
+
+Examples:
+find . -name "*.md"
+find .. -type f -name "*.md"
+find .. -maxdepth 1 -type d
+
+
+## File Permissions
+
+chmod:
+Changes file and directory permissions.
+
+Permission types:
+r = read
+w = write
+x = execute
+
+Permission groups:
+u = owner
+g = group
+o = others
+a = all
+
+Numeric permissions:
+r = 4
+w = 2
+x = 1
+
+Examples:
+chmod 755 file
+chmod 644 file
+chmod u+x file
+chmod g+w file
+chmod u=rwx,g=rx,o= file
